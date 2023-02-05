@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Balsamiq+Sans:wght@700&family=Butterfly+Kids&family=Caveat+Brush&family=Crafty+Girls&family=Dawning+of+a+New+Day&family=Fuzzy+Bubbles:wght@700&family=Hi+Melody&family=Jua&family=Just+Me+Again+Down+Here&family=Love+Ya+Like+A+Sister&family=Mansalva&family=Mountains+of+Christmas&family=Schoolbell&family=Short+Stack&family=Sunshiney&family=Yomogi&display=swap");
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,13 +9,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-* {
-  font-family: "Verdana", cursive, sans-serif;
-  color: #ffffff;
+
+.title {
+  font-family:'Schoolbell', cursive;
+  font-size: 70px;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 body {
-  background-color: #7cc6fe;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,21 +26,28 @@ body {
 }
 
 .app {
-  background-color: #252d4a;
+  background-color: white;
   width: 450px;
   min-height: 200px;
   height: min-content;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  box-shadow:
+	  inset #fc9790 0 0 0 5px, 
+    inset #FF9966 0 0 0 1px, 
+    inset #9a77b5 0 0 0 10px, 
+    inset #bfecf7 0 0 0 11px;
   display: flex;
   justify-content: space-evenly;
+  font-family: 'Short Stack', cursive;
+  color: #fc9790;
 }
 
 .score-section {
   display: flex;
   font-size: 24px;
   align-items: center;
+  position: relative;
 }
 
 /* QUESTION/TIMER/LEFT SECTION */
@@ -76,15 +89,17 @@ body {
 button {
   width: 100%;
   font-size: 16px;
-  color: #ffffff;
-  background-color: #252d4a;
+  color: #7fa367;
+  font-family: 'Short Stack', cursive;
+  background-color: #faf3a7;
   border-radius: 15px;
   display: flex;
   padding: 5px;
   justify-content: flex-start;
   align-items: center;
-  border: 5px solid #234668;
+  border: 0px solid black;
   cursor: pointer;
+  margin:5px;
 }
 
 .correct {
@@ -96,7 +111,7 @@ button {
 }
 
 button:hover {
-  background-color: #555e7d;
+  background-color: #FFCCCC;
 }
 
 button:focus {
@@ -105,4 +120,13 @@ button:focus {
 
 button svg {
   margin-right: 5px;
+}
+
+.Results{
+  position: absolute;
+  right:    0;
+  bottom:   0;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }

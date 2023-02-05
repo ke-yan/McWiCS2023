@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {Route, Routes, Link} from "react-router-dom"
+import { Result } from './pages/Result';
 
 export default function App() {
 	const questions = [
@@ -56,16 +58,41 @@ export default function App() {
 			setShowScore(true);
 		}
 	};
+
+  const changeRoute = () =>{
+
+  };
+
 	return (
+    <div className='body'>
+      <h1 className='title'>
+            <font color="#fc9790">S</font>
+            <font color="#7fa367">n</font>
+            <font color="#9a77b5">a</font>
+            <font color="#65ccf7">i</font>
+            <font color="#f0c94a">l</font>
+            <font color="#98fa7d">C</font>
+            <font color="#66CC66">a</font>
+            <font color="#FF9966">r</font>
+            <font color="#FFCCCC">e</font>
+        </h1>
 		<div className='app'>
-			{showScore ? (
+			
+      {showScore ? (
+        <>
+        <Routes>
+          <Route path="/Result" element={<Result />} />
+        </Routes>
 				<div className='score-section'>
-					<ol>
+          Your Skin Profile:
+					<ul>
           {array.map((answers) => (
             <li>{answers}</li>
           ))}
-        </ol>
+        </ul>
+        <button className="Results"><a href="http://127.0.0.1:5500/react-flask-app/src/pages/result.html">Check out your routine!</a></button>
 				</div>
+        </>  
 			) : (
 				<>
 					<div className='question-section'>
@@ -82,5 +109,6 @@ export default function App() {
 				</>
 			)}
 		</div>
+    </div>
 	);
 }

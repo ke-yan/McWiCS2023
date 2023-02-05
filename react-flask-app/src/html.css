@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Balsamiq+Sans:wght@700&family=Butterfly+Kids&family=Caveat+Brush&family=Crafty+Girls&family=Dawning+of+a+New+Day&family=Fuzzy+Bubbles:wght@700&family=Hi+Melody&family=Jua&family=Just+Me+Again+Down+Here&family=Love+Ya+Like+A+Sister&family=Mansalva&family=Mountains+of+Christmas&family=Schoolbell&family=Short+Stack&family=Sunshiney&family=Yomogi&display=swap");
+
+.title {
+    font-family:'Schoolbell', cursive;
+    font-size: 70px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+
+.products{
+    background-color: white;
+    width: 450px;
+    min-height: 200px;
+    height: min-content;
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: space-evenly;
+    color: #fc9790;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.product{
+    font-family:'Schoolbell', cursive;
+    font-size: 40px;
+    padding-bottom: 0;
+    text-align: center;
+    color:#fc9790;
+  }
+
+  .sub-title{
+    font-family:'Schoolbell', cursive;
+    font-size: 40px;
+    padding-bottom: 0;
+    text-align: center;
+    color:#fc9790;
+  }
+
+  .product-name{
+    font-family: 'Short Stack', cursive;
+    color: #9a77b5;
+    font-size: 20px;
+  }
+
+  .review{
+    font-family: 'Short Stack', cursive;
+    color: #9a77b5;
+    font-size: 10px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;;
+  }
