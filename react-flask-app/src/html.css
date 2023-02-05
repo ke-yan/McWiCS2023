@@ -6,6 +6,11 @@
     padding-bottom: 0;
     text-align: center;
   }
+   
+  body{
+    background-image: url('/pictures/backgroundsnail.png');
+    background-size:100% auto;
+  }
 
 
 .products{

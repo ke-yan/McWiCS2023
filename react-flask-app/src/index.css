@@ -18,11 +18,13 @@ body {
 }
 
 body {
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-image: url('C:\\Users\\Krish\\.vscode\\McWiCS2023\\pictures\\backgroundsnail.png');
+  background-size:100% auto;
 }
 
 .app {
