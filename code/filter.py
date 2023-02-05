@@ -15,7 +15,7 @@ def getRecs(array,product,dataframe):
     # Create user-item matrix
     matrix = dataf.pivot_table(index='user_id', columns='name', values='rating')
     matrix.head()
-    matrix.to_csv('ressources/test.csv')
+    # matrix.to_csv('ressources/test.csv')
 
     # Normalize user-item matrix
     matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 'rows')
@@ -26,7 +26,7 @@ def getRecs(array,product,dataframe):
     # print(number_of_users)
 
     mean = matrix_norm.mean(axis=0)
-    # print(mean)
+    print(mean)
 
     top_ten = mean.nlargest(10)
     print(top_ten)
