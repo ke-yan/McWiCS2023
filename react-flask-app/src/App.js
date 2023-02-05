@@ -10,7 +10,7 @@ export default function App() {
 				{ answerText: 'Flakey/Tight throughout the face', answer: "Dry" },
 				{ answerText: 'Shiny throughout the face', answer: "Oily" },
 				{ answerText: 'Shiny only on your my T-Zone (chin, nose, forehead)', answer: "Combination" },
-				{ answerText: 'Hydrated of comfortable', answer: "Normal" },
+				{ answerText: 'Hydrated or comfortable', answer: "Normal" },
 			],
 		},
 		// {
