@@ -1,3 +1,4 @@
+
 import pandas as pd
 
 df = pd.read_csv('ressources/combined.csv')
@@ -5,6 +6,9 @@ df = pd.read_csv('ressources/combined.csv')
 dups = df.pivot_table(columns=['name'], aggfunc= 'size')
 dups.to_csv('ressources/dups.csv')
 print(df['user_id'].nunique)
+
+def hi():
+    print('hello world')
 
 def getTopProducts(profile,category,dataframe):
     user_type = profile[0]
@@ -37,13 +41,7 @@ def getTopProducts(profile,category,dataframe):
     print(top_ten_df.loc[:, 'name'].to_numpy())
     return top_ten_df.loc[:, 'name'].to_numpy()
 
-def getRecs(profile):
-    # to add parameters later
-    has_treatment=True
-    has_mask=True
-    has_lip=True
-    has_eye=True
-
+def getRecs(profile,has_treatment,has_mask,has_lip,has_eye):
     products =[]
     product_types_df = pd.read_csv('ressources/product_types.csv')
 
@@ -78,5 +76,5 @@ def getRecs(profile):
 
 
 
-profile = ["combination", 'acne']
-getTopProducts(profile, 'facial-treatments', df)
+# profile = ["combination", 'acne']
+# getTopProducts(profile, 'facial-treatments', df)
